@@ -1,7 +1,7 @@
 import React from "react";
 
-const ColorfulMessage = (props) => {
-  // propsの中からcolorとchildrenを取り出しコードをスッキリさせる
+export const ColorfulMessage = (props) => {
+  // 分割代入でpropsの中からcolorとchildrenを取り出しコードをスッキリさせる
   const { color, children } = props;
   const contentStyle = {
     color: color,
@@ -12,4 +12,4 @@ const ColorfulMessage = (props) => {
   return <p style={contentStyle}>{children}</p>;
 };
 
-export default ColorfulMessage;
+// export default ColorfulMessage;
